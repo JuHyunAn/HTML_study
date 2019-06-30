@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택자 문법 사용하기</title>
+        <style>
+            div p#p_tag + p{
+                color: red;
+            }
+            div table.table th{
+                color: red;
+            }
+            div table.table tbody tr{
+                color: blue;
+            }
+            div table.table tbody tr + tr{
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>제목</h1>
+            <div>
+                <p id="p_tag">문단</p>
+                <p>문단</p>
+            </div>
+            <div>
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th>제목1</th>
+                            <th>제목2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>본문1</td>
+                            <td>본문2</td>
+                        </tr>
+                        <tr>
+                            <td>본문3</td>
+                            <td>본문4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
