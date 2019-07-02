@@ -11,7 +11,14 @@ html {
 }
 
 div {
+    /* 요소 컨텐츠 가운데 정렬 */
     text-align:center;
+    /* 마진 설정 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    /* 패딩 설정 */
+    padding: 20px;
 }
 
 p {
