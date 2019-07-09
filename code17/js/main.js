@@ -52,7 +52,7 @@ console.log(x !== y);   // true
 
 
 
-/* 사망 연산자 */
+/* 삼항 연산자 */
 var x = 10, y = "10";
 var z;
 console.log(z = x == y ? 10 : 11);      // 10 (true)
