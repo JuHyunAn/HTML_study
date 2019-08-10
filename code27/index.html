@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript DOM객체</title>
+        <!-- <script type="text/javascript" src="main.js"></script> -->
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="heading">제목 태그입니다.</h1>
+            <p class="paragraph">문단 태그입니다.</p>
+            <p class="paragraph">문단 태그입니다.</p>
+            <p class="paragraph">문단 태그입니다.</p>
+            <p class="paragraph">문단 태그입니다.</p>
+            <p class="paragraph">문단 태그입니다.</p>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
+
+<!--자바 스크립트의 랜더링 순서를 고려해서 body태그 맨 하단으로 이동,
+1. head 태그에서는 스크립트가 홀로 먼저 실행되어서 아래 h1 태그는 영향을 못받음
+2. body 태그 맨 아래에 있을 경우, 위에서 부터 div(h1, p)태그를 읽어 내려오기 때문에
+마지막 스크립트 적용 시 위에 값에 전부 반영됨-->
