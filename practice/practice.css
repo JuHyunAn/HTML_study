@@ -1,0 +1,49 @@
+p#background{
+    position: relative;
+    background-image: url(../practice/static/black.gif);                                                               
+    height: 100vh;
+    background-size: cover;
+}
+
+p#logo{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+div.button #install{
+    background: url(../practice/static/install.png);
+    width: 258px;
+    height: 71px;
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+div.button #porum{
+    background: url(../practice/static/porum.png);
+    position: absolute;
+    width: 258px;
+    height: 71px;
+    top: 80%;
+    right: 51%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    from{
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+        margin-top: -5%;   /* 마진을 15% 위로 줄여서, 이미지를 위로 올려주는 효과를 부여 */
+    }
+}
